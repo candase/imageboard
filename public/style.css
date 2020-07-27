@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    font-family: "Indie Flower", cursive;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(252, 246, 223);
+    transition-duration: 1s;
+    margin: 0px;
+    position: relative;
+    overflow-x: hidden;
+    transition-duration: 1s;
+}
+
+div#main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    min-height: 100vh;
+    transition-duration: 1s;
+}
+
+div#allImages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition-duration: 1s;
+}
+
+div.imageContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgb(247, 237, 201);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 340px;
+    height: 262px;
+}
+
+div.single_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+}
+
+.modal-image-container {
+    position: fixed;
+    z-index: 1;
+    border: 5px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    top: 3vh;
+    height: 90vh;
+    margin-bottom: 30px;
+    mix-blend-mode: normal;
+    margin: 5px;
+    overflow-y: scroll;
+}
+
+div.single_modal_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 640px;
+}
+
+div#delete {
+    margin: 10px;
+}
+
+div#delete p {
+    color: red;
+}
+
+button#delete {
+    background-color: red;
+}
+
+div.comment {
+    background-color: grey;
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: 70px;
+}
+
+div.new {
+    background-color: rgb(207, 178, 183);
+    color: black;
+}
+
+div.modal-img-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.modal-img-nav p {
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: monospace;
+    margin: 10px;
+    cursor: pointer;
+}
+
+form {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    transition-duration: 1s;
+}
+
+input {
+    border: 0px;
+    border-bottom: 1px black solid;
+    background-color: rgb(252, 246, 223);
+}
+
+img.background {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    background-size: cover;
+    background-repeat: repeat;
+    z-index: -1;
+    top: 0px;
+    transition-duration: 1s;
+}
+
+img {
+    width: auto;
+    max-width: 320px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+img.modal-image {
+    width: auto;
+    max-width: 640px;
+    height: 400px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+button:disabled {
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-bottom: 1px dotted black;
+}
+
+h1 {
+    text-align: center;
+    transition-duration: 1s;
+}
+
+h3 {
+    margin: 10px;
+}
+
+a {
+    color: black;
+}
+
+a#refresh {
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    border: 2px dotted black;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    transition-duration: 200ms;
+}
+
+a#refresh:hover {
+    background-color: tomato;
+    font-size: larger;
+    margin-bottom: 16px;
+}
+
+a#delete {
+    margin-bottom: 20px;
+    background-color: tomato;
+    border: 2px dotted black;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    transition-duration: 200ms;
+}
+
+a#imageuploading {
+    margin-bottom: 20px;
+    background-color: tomato;
+    border: 2px dotted black;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    transition-duration: 200ms;
+}
+
+a#imageuploaded {
+    margin-bottom: 20px;
+    background-color: rgb(160, 247, 126);
+    border: 2px dotted black;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    transition-duration: 200ms;
+}
+
+p {
+    margin: 5px;
+    min-height: 24px;
+}
+
+p#close {
+    text-align: right;
+    cursor: pointer;
+}
+
+p.info {
+    font-size: small;
+    text-align: right;
+    font-style: italic;
+}
+
+.modal-p {
+    margin: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    div#allImages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
